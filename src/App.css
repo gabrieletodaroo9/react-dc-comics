@@ -5,12 +5,20 @@ body {
 
 header {
     li {
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
 
     li a {
         font-weight: 600;
-        color: black;
+        color: rgb(66, 69, 70);
         text-decoration: none;
+    }
+
+    .active {
+        border-bottom: 4px solid #0282f9;
+
+        a {
+            color: #0282f9;
+        }
     }
 }

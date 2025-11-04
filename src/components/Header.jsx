@@ -9,11 +9,11 @@ export default function Header() {
                     <div>
                         <img src={LogoDc} alt="logo-dc" className='w-50' />
                     </div>
-                    <ul className='list-unstyled d-flex gap-4'>
+                    <ul className='list-unstyled d-flex gap-5'>
                         <li className=''>
                             <a href="">CHARACTERS</a>
                         </li>
-                        <li className=''>
+                        <li className='active'>
                             <a href="">COMICS</a>
                         </li>
                         <li className=''>
