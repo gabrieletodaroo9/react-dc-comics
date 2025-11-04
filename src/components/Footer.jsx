@@ -3,13 +3,14 @@ import PeriscopeImg from '../assets/img/footer-periscope.png'
 import PinterestImg from '../assets/img/footer-pinterest.png'
 import TwitterImg from '../assets/img/footer-twitter.png'
 import YouTubeImg from '../assets/img/footer-youtube.png'
+import BigLogo from '../assets/img/dc-logo-bg.png'
 
 
 export default function Footer() {
 
     return (
         <>
-            <footer>
+            <footer className='position-relative'>
                 <div className="container">
                     <div className="row py-5">
                         <div className="col-2 text-white">
@@ -113,6 +114,7 @@ export default function Footer() {
                             </ul>
 
                         </div>
+                        <img src={BigLogo} alt="logo-dc-big" className='position-absolute big-logo' />
                     </div>
                 </div>
                 <div className='footer-social bg-dark'>

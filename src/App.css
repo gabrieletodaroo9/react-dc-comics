@@ -16,7 +16,9 @@ body {
 /* UTILS */
 
 .side-content {
+    position: relative;
     background-color: #0282f9;
+    z-index: 1;
 }
 
 
@@ -77,6 +79,13 @@ footer {
     background-position: center;
     width: 100%;
 
+    .big-logo {
+        width: 550px;
+        top: -15%;
+        left: 55%;
+        z-index: 0;
+    }
+
 
     h3 {
         font-weight: bold;
@@ -90,6 +99,8 @@ footer {
 }
 
 .footer-social {
+    position: relative;
+    z-index: 1;
     background-color: #303030;
     width: 100%;
     padding: 3rem 0;
