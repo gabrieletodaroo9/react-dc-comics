@@ -13,7 +13,7 @@ export default function Footer() {
             <footer className='position-relative'>
                 <div className="container">
                     <div className="row py-5">
-                        <div className="col-2 text-white">
+                        <div className="col-4 col-md-2 text-white ps-4 position-relative z-1">
                             <div className='dc-comics-menu '>
                                 <h3>DC COMICS</h3>
                                 <ul className='list-unstyled'>
@@ -53,7 +53,7 @@ export default function Footer() {
                             </div>
 
                         </div>
-                        <div className="col-2 text-white">
+                        <div className="col-4 col-md-2 text-white ps-4 position-relative z-1">
                             <h3>DC</h3>
                             <ul className='list-unstyled'>
                                 <li>
@@ -91,7 +91,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-2 text-white">
+                        <div className="col-4 col-md-2 text-white ps-4 position-relative z-1">
                             <h3>SITES</h3>
                             <ul className='list-unstyled'>
                                 <li>
@@ -122,8 +122,8 @@ export default function Footer() {
                         <a className='btn btn dark' href="">
                             SIGN UP NOW!
                         </a>
-                        <div className='social-icons d-flex gap-3 align-items-center'>
-                            <span className='follow-span'>
+                        <div className='social-icons d-flex gap-2 gap-sm-3 align-items-center'>
+                            <span className='follow-span d-none d-md-block'>
                                 FOLLOW US
                             </span>
                             <a href="">

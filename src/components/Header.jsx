@@ -5,11 +5,11 @@ export default function Header() {
     return (
         <>
             <header>
-                <nav className="container d-flex justify-content-between align-items-center ">
-                    <div>
+                <nav className="container d-flex justify-content-center justify-content-md-between align-items-center ">
+                    <div className='logo'>
                         <img src={LogoDc} alt="logo-dc" className='w-50' />
                     </div>
-                    <ul className='list-unstyled d-flex gap-5'>
+                    <ul className='list-unstyled d-flex flex-wrap gap-5'>
                         <li className=''>
                             <a href="">CHARACTERS</a>
                         </li>

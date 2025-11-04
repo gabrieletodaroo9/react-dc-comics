@@ -11,23 +11,23 @@ export default function SideContent() {
             <div className="side-content">
                 <div className="container">
                     <div className='row text-white text-center'>
-                        <div className='col d-flex align-items-center justify-content-center'>
+                        <div className='col-lg d-flex align-items-center justify-content-center'>
                             <img src={DigitalIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
                             <a>DIGITAL COMICS</a>
                         </div>
-                        <div className='col d-flex align-items-center justify-content-center'>
+                        <div className=' col-lg d-flex align-items-center justify-content-center'>
                             <img src={MerchandiseIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
                             <a>DC MERCHANDISE</a>
                         </div>
-                        <div className='col d-flex align-items-center justify-content-center'>
+                        <div className='col-lg d-flex align-items-center justify-content-center'>
                             <img src={ShopLocatorIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
                             <a>SUBSCRIPTION</a>
                         </div>
-                        <div className='col d-flex align-items-center justify-content-center'>
+                        <div className='col-lg d-flex align-items-center justify-content-center'>
                             <img src={SubscriptionsIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
                             <a>COMIC SHOP LOCATOR</a>
                         </div>
-                        <div className='col d-flex align-items-center justify-content-center'>
+                        <div className='col-lg d-flex align-items-center justify-content-center'>
                             <img src={VisaIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
                             <a>DC POWER VISA</a>
                         </div>
