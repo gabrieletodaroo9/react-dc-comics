@@ -6,10 +6,34 @@
     box-sizing: border-box;
 }
 
+/* GENERALS */
+
 body {
     font-family: 'Open Sans', sans-serif;
 
 }
+
+/* UTILS */
+
+.side-content {
+    background-color: #0282f9;
+}
+
+
+.main-icon {
+    width: 50px;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+.row {
+    height: 50%;
+}
+
+/* HEADER */
 
 header {
     ul {
@@ -35,6 +59,8 @@ header {
     }
 }
 
+/* JUMBOTRON */
+
 .jumbotron {
     background-image: url(./assets/img/jumbotron.jpg);
     background-size: cover;
@@ -43,20 +69,28 @@ header {
     height: 300px;
 }
 
-.side-content {
-    background-color: #0282f9;
+/* FOOTER */
+
+footer {
+    background-image: url(./assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+
+    h3 {
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+
+    a {
+        color: lightgray;
+        text-decoration: none;
+    }
 }
 
-
-.main-icon {
-    width: 50px;
-}
-
-a:hover {
-    cursor: pointer;
-    text-decoration: underline !important;
-}
-
-.row {
-    height: 50%;
+.footer-social {
+    background-color: #303030;
+    height: 150px;
+    width: 100%;
 }
