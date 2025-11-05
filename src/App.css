@@ -28,11 +28,22 @@ body {
 
 a:hover {
     cursor: pointer;
-    text-decoration: underline !important;
+    text-decoration: #0282f9 !important;
+    color: #0282f9;
 }
 
 .row {
     height: 50%;
+}
+
+.scale:hover a {
+    scale: 1.1;
+
+}
+
+.scale:hover .main-icon {
+    transition: 1s all ease;
+    transform: rotate(360deg) !important
 }
 
 /* HEADER */
@@ -87,6 +98,10 @@ section {
 
     img {
         border-radius: 0;
+    }
+
+    &:hover {
+        scale: 1.05;
     }
 }
 
@@ -148,6 +163,10 @@ footer {
         border-radius: 0;
         color: white;
         border: 2px solid #0282f9;
+
+        &:hover {
+            background-color: #3590e5;
+        }
     }
 
     .follow-span {
@@ -157,6 +176,16 @@ footer {
         font-size: 1.3rem;
     }
 
+    img {
+        border-radius: 50%;
+        transition: all 0.3 ease;
+    }
+
+    img:hover {
+        background-color: rgba(2, 130, 249, 0.8);
+        box-shadow: 0 0 15px rgba(2, 130, 249, 0.8) !important;
+        scale: 1.07;
+    }
 }
 
 /* MEDIA QUERY */
@@ -187,13 +216,17 @@ footer {
             left: 0 !important;
         }
 
-        header>nav {
-            justify-content: center !important;
+        .jumbotron {
+            margin-top: 2rem;
         }
 
         .logo {
             text-align: center;
 
+        }
+
+        header {
+            position: relative;
         }
 
         nav img {
@@ -202,7 +235,14 @@ footer {
         }
 
         nav>.list-unstyled {
-            display: none !important;
+            position: absolute;
+            top: 6.5rem;
+            width: 100%;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+            gap: 0.2rem !important;
+
         }
 
         header li {
@@ -212,14 +252,29 @@ footer {
 
 }
 
+@media screen and (max-width:642px) {
+    nav>.list-unstyled {
+        width: 100vw !important;
+        gap: 0 !important;
+        text-align: center;
+    }
+
+    nav>.list-unstyled>li {
+        width: 20%;
+    }
+}
+
+
 @media screen and (max-width:586px) {
     .big-logo {
         top: -8% !important;
     }
 
     .title-card-container {
-        left: 140px;
+        left: 50%;
+        transform: translate(-50%, 0)
     }
+
 
 
     .follow-span {
@@ -227,7 +282,11 @@ footer {
     }
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:473px) {
+    nav>.list-unstyled {
+        font-size: 0.8rem;
+    }
+
     .big-logo {
         top: 5% !important;
     }

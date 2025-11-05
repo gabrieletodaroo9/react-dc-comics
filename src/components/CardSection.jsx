@@ -175,7 +175,7 @@ export default function CardSection() {
                         ))
                     }
                     <div className="title-card-container">CURRENT SERIES</div>
-                    <button className="btn text-center m-auto mt-4">LOAD MORE</button>
+                    <button className="btn btn-primary text-center m-auto mt-4">LOAD MORE</button>
 
                 </div>
             </div>
