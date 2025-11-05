@@ -71,6 +71,25 @@ header {
     height: 300px;
 }
 
+/* SECTION CARD */
+
+section {
+    width: 100%;
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+.card-img-container {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.btn {
+    width: 20%;
+}
+
 /* FOOTER */
 
 footer {
