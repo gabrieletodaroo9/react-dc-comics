@@ -1,10 +1,13 @@
+import SupermanImg from "../assets/img/superman.png"
+import BatmanImg from "../assets/img/batman.png"
+import CatwomanImg from "../assets/img/catwoman.png"
 
 const comics = [
     {
         id: 1,
         title: "Action Comics #1000: The Deluxe Edition",
         description: "The celebration of 1,000 issues of Action Comics continues with a new, Deluxe Edition of the amazing comic that won raves when it hit comics shops in April! This hardcover includes all the stories from that issue, plus the tale by writer Paul Levitz and artist Neal Adams that appeared in the Action Comics: 80 Years Of Superman hardcover, as well as all the variant covers, design sketches by Jim Lee for Superman's new look, scripts for the stories, the original art from the lost story featuring art by Curt Swan and more! Plus: a complete reprint of the stories that started it all—the Superman stories Action Comics #1 and 2 from 1938!",
-        thumb: "https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY",
+        thumb: SupermanImg,
         price: "$19.99",
         series: "Action Comics",
         sale_date: "2018-10-02",
@@ -60,7 +63,7 @@ const comics = [
         id: 5,
         title: "Batman #56",
         description: "The Dark Knight's looking to drop both the hammer and sickle on the KGBeast. The Russian super-assassin has gone too far, and Batman will stop at nothing to hunt him down. But is the Dark Knight willing to step into the darkness himself to find justice?",
-        thumb: "https://imgs.search.brave.com/jgxYlrx442aozemzjqdmCsd9DkIkRollJp1T8sG8TfE/rs:fit:720:1106:1/g:ce/aHR0cHM6Ly9veXN0/ZXIuaWduaW1ncy5j/b20vd29yZHByZXNz/L3N0Zy5pZ24uY29t/LzIwMTgvMTAvU1RM/MDk3MDk1LTcyMHgx/MTA2LmpwZw",
+        thumb: BatmanImg,
         price: "$3.99",
         series: "Batman",
         sale_date: "2018-10-03",
@@ -144,7 +147,7 @@ const comics = [
         id: 12,
         title: "Catwoman Vol. 1: Copycats",
         description: "Following her near-miss wedding with Batman, Catwoman hits the streets to expose a copycat.",
-        thumb: "https://imgs.search.brave.com/bf_FlGnymAgmvweY8YiLAcyy600JdSMl_jHpdR3t5ro/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNTA5/M2IxOTEtZTkzZS00/NTJjLThhYTQtYTEw/ZDY0ZTcxN2E5LjA5/N2UwZWM5NDgzYzky/OGExMjY4Nzk1Nzk2/NTliZWNjLmpwZWc_/b2RuV2lkdGg9NjEy/Jm9kbkhlaWdodD02/MTImb2RuQmc9ZmZm/ZmZm",
+        thumb: CatwomanImg,
         price: "$16.99",
         series: "Catwoman",
         sale_date: "2019-04-10",
