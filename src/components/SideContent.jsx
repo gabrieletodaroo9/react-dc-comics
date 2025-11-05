@@ -48,7 +48,7 @@ export default function SideContent() {
                         {
                             SideContentLink.map(item => (
 
-                                <div className='col-lg d-flex align-items-center justify-content-center scale'>
+                                <div key={item.id} className='col-lg d-flex align-items-center justify-content-center scale'>
                                     <img src={item.imgUrl} alt="" className='main-icon py-5 pe-3' />
                                     <a className='text-white text-decoration-none' href={item.link}>{item.title.toUpperCase()}</a>
                                 </div>
