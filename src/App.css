@@ -217,6 +217,9 @@ footer {
         top: -8% !important;
     }
 
+    .title-card-container {
+        left: 140px;
+    }
 
 
     .follow-span {
