@@ -164,7 +164,7 @@ export default function Main() {
                 </div>
 
                 <section className="bg-dark">
-                    <div className="container">
+                    <div className="container position-relative">
                         <div className="row py-5">
                             {
                                 comics.map(comic => (
@@ -178,7 +178,8 @@ export default function Main() {
                                     </div>
                                 ))
                             }
-                            <button className="btn btn-primary text-center m-auto mt-4">LOAD MORE</button>
+                            <div className="title-card-container">CURRENT SERIES</div>
+                            <button className="btn text-center m-auto mt-4">LOAD MORE</button>
 
                         </div>
                     </div>
