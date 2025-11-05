@@ -4,6 +4,39 @@ import ShopLocatorIcon from '../assets/img/buy-comics-shop-locator.png'
 import SubscriptionsIcon from '../assets/img/buy-comics-subscriptions.png'
 import VisaIcon from '../assets/img/buy-dc-power-visa.svg'
 
+const SideContentLink = [
+    {
+        id: 1,
+        title: "digital comics",
+        link: "#",
+        imgUrl: DigitalIcon,
+    },
+    {
+        id: 2,
+        title: "dc merchandise",
+        link: "#",
+        imgUrl: MerchandiseIcon,
+    },
+    {
+        id: 3,
+        title: "subscription",
+        link: "#",
+        imgUrl: ShopLocatorIcon,
+    },
+    {
+        id: 4,
+        title: "comic shop locator",
+        link: "#",
+        imgUrl: SubscriptionsIcon,
+    },
+    {
+        id: 5,
+        title: "dc power visa",
+        link: "#",
+        imgUrl: VisaIcon,
+    },
+]
+
 export default function SideContent() {
 
     return (
@@ -11,26 +44,18 @@ export default function SideContent() {
             <div className="side-content">
                 <div className="container">
                     <div className='row text-white text-center'>
-                        <div className='col-lg d-flex align-items-center justify-content-center'>
-                            <img src={DigitalIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
-                            <a>DIGITAL COMICS</a>
-                        </div>
-                        <div className=' col-lg d-flex align-items-center justify-content-center'>
-                            <img src={MerchandiseIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
-                            <a>DC MERCHANDISE</a>
-                        </div>
-                        <div className='col-lg d-flex align-items-center justify-content-center'>
-                            <img src={ShopLocatorIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
-                            <a>SUBSCRIPTION</a>
-                        </div>
-                        <div className='col-lg d-flex align-items-center justify-content-center'>
-                            <img src={SubscriptionsIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
-                            <a>COMIC SHOP LOCATOR</a>
-                        </div>
-                        <div className='col-lg d-flex align-items-center justify-content-center'>
-                            <img src={VisaIcon} alt="digitalIcon" className='main-icon py-5 pe-3' />
-                            <a>DC POWER VISA</a>
-                        </div>
+
+                        {
+                            SideContentLink.map(item => (
+
+                                <div className='col-lg d-flex align-items-center justify-content-center'>
+                                    <img src={item.imgUrl} alt="" className='main-icon py-5 pe-3' />
+                                    <a className='text-white text-decoration-none' href={item.link}>{item.title.toUpperCase()}</a>
+                                </div>
+                            ))
+
+                        }
+
                     </div>
                 </div>
             </div>
