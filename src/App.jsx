@@ -268,151 +268,179 @@ export default function App() {
       imgUrl: VisaIcon,
     },
   ]
-  const socialImgs = [
-    FacebookImg, PeriscopeImg, PinterestImg, TwitterImg, YouTubeImg
-  ]
-  const DcComicsMenu = [
+  const socialSection = {
+    socialText: "Follow us",
+    btnText: "Sign up now!",
+    socialImg: [FacebookImg, PeriscopeImg, PinterestImg, TwitterImg, YouTubeImg]
+  }
+  const dcComicsCol = [
     {
-      id: 1,
-      title: "Character",
-      link: "#"
-    },
+      title: "Dc Comics",
+      menuLink: [
+        {
+          id: 1,
+          title: "Character",
+          link: "#"
+        },
+        {
+          id: 2,
+          title: "Comics",
+          link: "#"
+        },
+        {
+          id: 3,
+          title: "Movies",
+          link: "#"
+        },
+        {
+          id: 4,
+          title: "TV",
+          link: "#"
+        },
+        {
+          id: 5,
+          title: "Games",
+          link: "#"
+        },
+        {
+          id: 6,
+          title: "Video",
+          link: "#"
+        },
+        {
+          id: 7,
+          title: "News",
+          link: "#"
+        }
+      ]
+    }
+    ,
     {
-      id: 2,
-      title: "Comics",
-      link: "#"
-    },
-    {
-      id: 3,
-      title: "Movies",
-      link: "#"
-    },
-    {
-      id: 4,
-      title: "TV",
-      link: "#"
-    },
-    {
-      id: 5,
-      title: "Games",
-      link: "#"
-    },
-    {
-      id: 6,
-      title: "Video",
-      link: "#"
-    },
-    {
-      id: 7,
-      title: "News",
-      link: "#"
+      title: "Shop",
+      menuLink: [
+        {
+          id: 1,
+          title: "Video",
+          link: "#"
+        },
+        {
+          id: 2,
+          title: "News",
+          link: "#"
+        }
+      ]
     }
   ]
-  const DcMenu = [
-    {
-      id: 1,
-      title: "Terms Of Use",
-      link: "#"
-    },
-    {
-      id: 2,
-      title: "Privacy",
-      link: "#"
-    },
-    {
-      id: 3,
-      title: "Policy(new)",
-      link: "#"
-    },
-    {
-      id: 4,
-      title: "Ad Choices",
-      link: "#"
-    },
-    {
-      id: 5,
-      title: "Advertising",
-      link: "#"
-    },
-    {
-      id: 6,
-      title: "Jobs",
-      link: "#"
-    },
-    {
-      id: 7,
-      title: "Subscriptions",
-      link: "#"
-    },
-    {
-      id: 8,
-      title: "Talent",
-      link: "#"
-    },
-    {
-      id: 9,
-      title: "Workshops",
-      link: "#"
-    },
-    {
-      id: 10,
-      title: "CPSC",
-      link: "#"
-    },
-    {
-      id: 11,
-      title: "Certificates",
-      link: "#"
-    },
-    {
-      id: 12,
-      title: "Ratings",
-      link: "#"
-    },
-    {
-      id: 13,
-      title: "Shop Help",
-      link: "#"
-    },
-    {
-      id: 14,
-      title: "Contact Us",
-      link: "#"
-    }
-  ]
-  const SitesMenu = [
-    {
-      id: 1,
-      title: "DC",
-      link: "#"
-    },
-    {
-      id: 2,
-      title: "MAD Magazine",
-      link: "#"
-    },
-    {
-      id: 3,
-      title: "DC Kids",
-      link: "#"
-    },
-    {
-      id: 4,
-      title: "DC Universe",
-      link: "#"
-    },
-    {
-      id: 5,
-      title: "DC Power Visa",
-      link: "#"
-    }
-  ]
-
+  const DcMenu = {
+    title: "Dc",
+    menuLink: [
+      {
+        id: 1,
+        title: "Terms Of Use",
+        link: "#"
+      },
+      {
+        id: 2,
+        title: "Privacy",
+        link: "#"
+      },
+      {
+        id: 3,
+        title: "Policy(new)",
+        link: "#"
+      },
+      {
+        id: 4,
+        title: "Ad Choices",
+        link: "#"
+      },
+      {
+        id: 5,
+        title: "Advertising",
+        link: "#"
+      },
+      {
+        id: 6,
+        title: "Jobs",
+        link: "#"
+      },
+      {
+        id: 7,
+        title: "Subscriptions",
+        link: "#"
+      },
+      {
+        id: 8,
+        title: "Talent",
+        link: "#"
+      },
+      {
+        id: 9,
+        title: "Workshops",
+        link: "#"
+      },
+      {
+        id: 10,
+        title: "CPSC",
+        link: "#"
+      },
+      {
+        id: 11,
+        title: "Certificates",
+        link: "#"
+      },
+      {
+        id: 12,
+        title: "Ratings",
+        link: "#"
+      },
+      {
+        id: 13,
+        title: "Shop Help",
+        link: "#"
+      },
+      {
+        id: 14,
+        title: "Contact Us",
+        link: "#"
+      }
+    ]
+  }
+  const SitesMenu = {
+    title: "Sites",
+    menuLink: [
+      {
+        id: 1,
+        title: "DC",
+        link: "#"
+      },
+      {
+        id: 2,
+        title: "MAD Magazine",
+        link: "#"
+      },
+      {
+        id: 3,
+        title: "DC Kids",
+        link: "#"
+      },
+      {
+        id: 4,
+        title: "DC Universe",
+        link: "#"
+      },
+      {
+        id: 5,
+        title: "DC Power Visa",
+        link: "#"
+      }
+    ]
+  }
   return (
     <>
       <Header src={LogoDc} menuLinks={headerLinkItems} />
       <Main comics={comics} sideContentLink={sideContentLink} />
-      <Footer BigLogo={BigLogo} FooterMenuData={{ DcComicsMenu, DcMenu, SitesMenu }} socialImgs={socialImgs} />
+      <Footer BigLogo={BigLogo} FooterMenuData={{ dcComicsCol, DcMenu, SitesMenu }} socialSection={socialSection} />
     </>
   )
 }
