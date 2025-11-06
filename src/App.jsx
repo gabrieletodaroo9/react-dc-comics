@@ -31,12 +31,13 @@ export default function App() {
       id: 2,
       title: "COMICS",
       link: "#",
+      isActive: true
     },
     {
       id: 3,
       title: "MOVIES",
       link: "#",
-      isActive: true
+      isActive: false
     },
     {
       id: 4,
