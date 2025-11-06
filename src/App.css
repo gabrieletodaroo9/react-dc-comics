@@ -9,6 +9,7 @@
 /* GENERALS */
 
 body {
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -51,7 +52,8 @@ a:hover {
 /* HEADER */
 
 header {
-    ul {
+
+    nav ul {
         margin: 0;
     }
 
@@ -81,6 +83,7 @@ header {
         scale: 1.05;
         cursor: pointer;
     }
+
 }
 
 /* JUMBOTRON */
