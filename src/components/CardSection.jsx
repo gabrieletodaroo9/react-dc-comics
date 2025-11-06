@@ -1,5 +1,5 @@
 export default function CardSection({ comics }) {
-    return (<>
+    return (
         <section className="bg-dark">
             <div className="container position-relative">
                 <div className="row py-5">
@@ -21,6 +21,5 @@ export default function CardSection({ comics }) {
                 </div>
             </div>
         </section>
-    </>
     )
 }

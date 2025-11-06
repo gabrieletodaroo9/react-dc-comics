@@ -11,8 +11,12 @@ import MerchandiseIcon from './assets/img/buy-comics-merchandise.png'
 import ShopLocatorIcon from './assets/img/buy-comics-shop-locator.png'
 import SubscriptionsIcon from './assets/img/buy-comics-subscriptions.png'
 import VisaIcon from './assets/img/buy-dc-power-visa.svg'
-
-
+import FacebookImg from './assets/img/footer-facebook.png'
+import PeriscopeImg from './assets/img/footer-periscope.png'
+import PinterestImg from './assets/img/footer-pinterest.png'
+import TwitterImg from './assets/img/footer-twitter.png'
+import YouTubeImg from './assets/img/footer-youtube.png'
+import BigLogo from './assets/img/dc-logo-bg.png'
 
 export default function App() {
 
@@ -263,12 +267,151 @@ export default function App() {
       imgUrl: VisaIcon,
     },
   ]
+  const socialImgs = [
+    FacebookImg, PeriscopeImg, PinterestImg, TwitterImg, YouTubeImg
+  ]
+  const DcComicsMenu = [
+    {
+      id: 1,
+      title: "Character",
+      link: "#"
+    },
+    {
+      id: 2,
+      title: "Comics",
+      link: "#"
+    },
+    {
+      id: 3,
+      title: "Movies",
+      link: "#"
+    },
+    {
+      id: 4,
+      title: "TV",
+      link: "#"
+    },
+    {
+      id: 5,
+      title: "Games",
+      link: "#"
+    },
+    {
+      id: 6,
+      title: "Video",
+      link: "#"
+    },
+    {
+      id: 7,
+      title: "News",
+      link: "#"
+    }
+  ]
+  const DcMenu = [
+    {
+      id: 1,
+      title: "Terms Of Use",
+      link: "#"
+    },
+    {
+      id: 2,
+      title: "Privacy",
+      link: "#"
+    },
+    {
+      id: 3,
+      title: "Policy(new)",
+      link: "#"
+    },
+    {
+      id: 4,
+      title: "Ad Choices",
+      link: "#"
+    },
+    {
+      id: 5,
+      title: "Advertising",
+      link: "#"
+    },
+    {
+      id: 6,
+      title: "Jobs",
+      link: "#"
+    },
+    {
+      id: 7,
+      title: "Subscriptions",
+      link: "#"
+    },
+    {
+      id: 8,
+      title: "Talent",
+      link: "#"
+    },
+    {
+      id: 9,
+      title: "Workshops",
+      link: "#"
+    },
+    {
+      id: 10,
+      title: "CPSC",
+      link: "#"
+    },
+    {
+      id: 11,
+      title: "Certificates",
+      link: "#"
+    },
+    {
+      id: 12,
+      title: "Ratings",
+      link: "#"
+    },
+    {
+      id: 13,
+      title: "Shop Help",
+      link: "#"
+    },
+    {
+      id: 14,
+      title: "Contact Us",
+      link: "#"
+    }
+  ]
+  const SitesMenu = [
+    {
+      id: 1,
+      title: "DC",
+      link: "#"
+    },
+    {
+      id: 2,
+      title: "MAD Magazine",
+      link: "#"
+    },
+    {
+      id: 3,
+      title: "DC Kids",
+      link: "#"
+    },
+    {
+      id: 4,
+      title: "DC Universe",
+      link: "#"
+    },
+    {
+      id: 5,
+      title: "DC Power Visa",
+      link: "#"
+    }
+  ]
 
   return (
     <>
       <Header src={LogoDc} menuLinks={headerLinkItems} />
       <Main comics={comics} sideContentLink={sideContentLink} />
-      <Footer />
+      <Footer BigLogo={BigLogo} FooterMenuData={{ DcComicsMenu, DcMenu, SitesMenu }} socialImgs={socialImgs} />
     </>
   )
 }

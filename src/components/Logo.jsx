@@ -1,4 +1,3 @@
-
 export default function Logo({ src }) {
     return (
         <a href='#' className='logo'>
