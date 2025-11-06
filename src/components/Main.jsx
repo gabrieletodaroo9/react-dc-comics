@@ -1,16 +1,16 @@
 import CardSection from "./CardSection"
+import Jumbotron from "./Jumbotron"
 import SideContent from "./SideContent"
 
 
-export default function Main() {
+export default function Main({ comics, sideContentLink }) {
 
     return (
         <>
             <main>
-                <div className="jumbotron">
-                </div>
-                <CardSection />
-                <SideContent />
+                <Jumbotron />
+                <CardSection comics={comics} />
+                <SideContent sideContentLink={sideContentLink} />
             </main>
         </>
     )
