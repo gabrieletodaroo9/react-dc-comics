@@ -1,6 +1,6 @@
 export default function SideContent({ sideContentLink }) {
     return (
-        <div className="side-content">
+        <div className="side-content z-1 position-relative">
             <div className="container">
                 <div className='row text-white text-center'>
                     {

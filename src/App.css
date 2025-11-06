@@ -1,4 +1,4 @@
-/* RESET */
+/*#region RESET */
 
 * {
     margin: 0;
@@ -6,25 +6,14 @@
     box-sizing: border-box;
 }
 
-/* GENERALS */
+/* #endregion RESET */
+
+/*#region GENERICS */
 
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 
-}
-
-/* UTILS */
-
-.side-content {
-    position: relative;
-    background-color: #0282f9;
-    z-index: 1;
-}
-
-
-.main-icon {
-    width: 50px;
 }
 
 a:hover {
@@ -33,15 +22,22 @@ a:hover {
     color: #0282f9;
 }
 
-.row {
-    height: 50%;
+/*#endregion GENERICS */
+
+/*#region UTILS */
+
+.side-content {
+    background-color: #0282f9;
+}
+
+.main-icon {
+    width: 50px;
 }
 
 .scale:hover a {
     scale: 1.1;
     padding-left: 1.3rem;
     font-size: 1.1rem;
-
 }
 
 .scale:hover .main-icon {
@@ -49,7 +45,9 @@ a:hover {
     transform: rotate(360deg) !important
 }
 
-/* HEADER */
+/*#endregion UTILS */
+
+/*#region HEADER */
 
 header {
 
@@ -86,7 +84,9 @@ header {
 
 }
 
-/* JUMBOTRON */
+/* #endregion */
+
+/*#region JUMBOTRON */
 
 .jumbotron {
     background-image: url(./assets/img/jumbotron.jpg);
@@ -96,7 +96,9 @@ header {
     height: 300px;
 }
 
-/* SECTION CARD */
+/* #endregion JUMBOTRON */
+
+/*#region SECTION CARD */
 
 section {
     width: 100%;
@@ -151,7 +153,9 @@ section {
     padding: 1rem 2rem;
 }
 
-/* FOOTER */
+/* #endregion SECTION CARD  */
+
+/*#region FOOTER */
 
 footer {
     overflow-x: hidden;
@@ -222,7 +226,9 @@ footer {
     }
 }
 
-/* MEDIA QUERY */
+/* #endregion FOOTER */
+
+/*#region MEDIA QUERY */
 
 @media screen and (max-width:992px) {
 
@@ -331,3 +337,5 @@ footer {
         top: 1rem !important;
     }
 }
+
+/* #endregion MEDIA QUERY */
