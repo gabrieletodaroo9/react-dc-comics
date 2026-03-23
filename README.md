@@ -1,3 +1,17 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6a9d951a-942d-4923-8d27-2c59f486d176" alt="" width="80%">
-</p>
+# DC Comics - React 
+
+Una replica fedele dell'interfaccia web di **DC Comics**, realizzata per approfondire la logica della **componentizzazione** e la gestione dinamica dei dati in **React**.
+
+Il progetto si concentra sulla scomposizione di un layout complesso in componenti atomici e riutilizzabili, simulando il flusso di dati di un'applicazione reale tramite l'uso delle props.
+
+### Demo
+
+<img src="./src/assets/demo/dc-comics.gif" alt="Demo DC Comics" width="800">
+
+
+### Tecnologie utilizzate
+
+* **React**
+* **Vite**
+* **JavaScript**
+* **CSS**
